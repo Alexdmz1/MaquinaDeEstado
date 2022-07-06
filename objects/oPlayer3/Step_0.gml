@@ -269,53 +269,6 @@ actualizarMovimiento();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#region//Disparos, comentados por el momento
-/*
-if disparo {
-
-	create_bullet(0,image_xscale*walksp,faction,guns);
-	//var inst =instance_create_layer(x,y,"Instances",obj_bullet);
-	//inst.speed *= image_xscale*walksp;
-	
-}
-
-*/
-
-/*
-if key_down{
-	if disparo{
-		
-		if (distance_to_object(obj_bullet)<30 && hsp==0){ sprite_index =spr_disparo;  }
-
-		
-	}
-
-}
-*/
-
-//mejorar!!
-/*
-
-if key_down && (hsp>0 or hsp<0){
-	if (distance_to_object(obj_block)>0){ sprite_index =spr_rovot_run; image_index = 0; image_speed =1; }
-
-}
-*/
-
-#endregion
-
-
 #region//Acelerar
 if acelerar && walksp==4{
 	walksp+=4;
@@ -324,16 +277,4 @@ if acelerar && walksp==4{
 move_wrap(true, false, sprite_width/2);
 
 
-/*
-if key_down
-{
-	sprite_index =spr_rovot_abajo;
-	image_index =0;
-	image_speed =0;
-}
-*/
 
-/* animacion disparo
-if (distance_to_object(obj_bullet)<30 && hsp==0){ sprite_index =spr_disparo;  }
-if (distance_to_object(obj_bullet)<30 && vsp<0){ sprite_index =spr_disparo;  }
-*/
